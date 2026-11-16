@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: #e9e9e9;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#app {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  min-height: 100vh;
+  padding: 16px 16px 80px 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Header */
+.header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-btn {
+  flex: 1;
+  padding: 10px 0;
+  border: 1px solid #dcdcdc;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn.active {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+/* Personal Color Section */
+.personal-color-section {
+  margin-bottom: 24px;
+  background-color: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #eeeeee;
+}
+
+.pc-header h2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.pc-header p {
+  font-size: 12px;
+  color: #777777;
+  margin-bottom: 14px;
+}
+
+.season-group {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.season-btn {
+  flex: 1;
+  padding: 12px 0;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.season-btn.active {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  border-color: #1a1a1a;
+}
+
+.subtone-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.subtone-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.subtone-btn {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.subtone-btn.active {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #333333;
+  font-weight: bold;
+}
+
+.selected-status {
+  font-size: 13px;
+  font-weight: bold;
+  color: #1a1a1a;
+  padding: 12px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* 추천 결과 카드 */
+.result-header {
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 15px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 14px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.item-badge {
+  background-color: #f2f2f2;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #333;
+  border-radius: 4px;
+}
+
+.card-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.placeholder-section {
+  text-align: center;
+  padding: 60px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 420px;
+  height: 60px;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+}
+
+.bottom-nav-btn {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #777777;
+  cursor: pointer;
+  flex: 1;
+  height: 100%;
+}
+
+.b-icon {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.bottom-nav-btn.active {
+  color: #1a1a1a;
+  font-weight: bold;
+}
